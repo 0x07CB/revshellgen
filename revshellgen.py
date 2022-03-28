@@ -34,7 +34,7 @@ fail = Template(Style.BRIGHT + '[' + Fore.RED + ' - ' + Fore.RESET + '] ' + Styl
 ip = port = shell = command = ''
 
 choices = ['no', 'yes']
-shells = ['/bin/sh', '/bin/bash', '/bin/zsh', '/bin/ksh', '/bin/tcsh', '/bin/dash']
+shells = ['/bin/sh', '/bin/bash', '/bin/zsh', '/bin/ksh', '/bin/tcsh', '/bin/dash', '/usr/bin/python']
 commands = sorted([command for command in os.listdir(sys.path[0] + '/commands')])
 
 
