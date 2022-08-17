@@ -79,15 +79,7 @@ echo "Installing of revshellgen to /opt directory..."
 sudo mkdir -p /opt/revshellgen
 sudo cp -r commands /opt/revshellgen/
 sudo cp  LICENSE /opt/revshellgen/
-
-# sed change the shebang line to use '/usr/bin/python3' instead of '/usr/bin/env python3' of /opt/revshellgen/revshellgen.py
-python_shebang="#!/usr/bin/python3"
-sed -i "1s/.*/$python_shebang/" revshellgen.py
-
 sudo cp  revshellgen.py /opt/revshellgen/
-
-# copy /tmp/revshellgen.py to /opt/revshellgen/revshellgen.py
-sudo cp /tmp/revshellgen.py /opt/revshellgen/revshellgen.py
 sudo chmod a+x /opt/revshellgen/revshellgen.py
 sudo ln -s /opt/revshellgen/revshellgen.py /usr/local/bin/revshellgen
 echo "Installation complete."
