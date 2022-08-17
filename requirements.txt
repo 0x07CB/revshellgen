@@ -1,2 +1,4 @@
 readchar
-sh
+netifaces
+colorama
+pyperclip
