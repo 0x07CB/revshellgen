@@ -18,7 +18,7 @@ linux_install_with_package_manager() {
 
 linux_update_package_manager(){
     if [ -f /etc/debian_version ]; then
-        sudo apt-get update
+        sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
     elif [ -f /etc/arch-release ]; then
         sudo pacman -Syu
     elif [ -f /etc/redhat-release ]; then
